@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata: #can only have name and value
+  name: myapp #string value
+  labels: # can have any key and value under here (this is is a dictionary)
+    app: myapp
+    type: front-end
+spec:
+  containers: #property is a list/array
+    - name: nginx-container #dash symbolizes the first item in the list.
+      image: nginx
