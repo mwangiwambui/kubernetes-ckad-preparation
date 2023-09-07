@@ -1,4 +1,4 @@
-# Kubernetes CKAD Preparation
+# Kubernetes CKAD Practise
 
 To imperatively create pods ! 
 `kubectl run pod  nginx --image=ngix`
