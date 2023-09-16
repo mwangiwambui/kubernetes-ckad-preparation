@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgress-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: postgres
+  template:
+    metadata:
+      labels:
+        component: postgress
+    spec:
+      containers:
+        - name: postgres
+          image: fhinschy/notes-postgress
+          ports:
+            - containerPort: 5342
+          env:
+            - name: POSTGRES_PASSWORD
+              value: 483yr40ryy038
+            - name: POSTGRES_DB
+              value: notesdb
