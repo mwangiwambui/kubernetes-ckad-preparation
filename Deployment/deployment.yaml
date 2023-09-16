@@ -6,7 +6,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      component: api
+      component: api #the deployment will control the pods with this label
   template:
     metadata:
       labels:
