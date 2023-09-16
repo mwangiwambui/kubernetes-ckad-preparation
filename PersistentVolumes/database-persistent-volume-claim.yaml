@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: database-persistent-volume-PersistentVolumeClaim
+spec:
+  storageClassName: manual #claims any persisence volume that has the storage class set to this.
+  #if you have no volume with the above spec then a volume will be provisioned dynamically.
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi # The persistance volume must have atleast 2Gi set aside.
