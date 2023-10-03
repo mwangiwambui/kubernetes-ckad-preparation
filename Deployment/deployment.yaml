@@ -12,7 +12,6 @@ spec:
       labels:
         component: api
     spec:
-    
       containers:
         - name: api
           image: fhsinchy/notes-api
