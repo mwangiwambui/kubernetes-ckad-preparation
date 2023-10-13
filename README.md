@@ -5,3 +5,5 @@ To imperatively  create pods !
 
 To imperatively scale a replica set to more replicas
 `kubectl scale rs my-replicaset --replicas=5`
+
+

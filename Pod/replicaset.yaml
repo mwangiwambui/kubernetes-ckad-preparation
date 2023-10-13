@@ -3,8 +3,9 @@ kind: ReplicaSet
 metadata:
   name: my-ReplicaSet
 spec:
+
   replicas: 3
-  selector:
+  selector: #required for replicasets
     matchLabels:
       app: myapp
   template:
